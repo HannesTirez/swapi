@@ -1,0 +1,136 @@
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url("SW_images/SW_background_01.png");
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url(https://www.dafont.com/starjedi/Starjedi.ttf) format("truetype");
+}
+
+
+/* navigation bar layout */
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0d0d0d;
+}
+
+.nav {
+    float: right;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #333333;
+    color: #FFFF82
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+#category_text{
+    background: rgb(0,0,0,0.3);
+    width: 70%;
+    position: center;
+    margin-left: 15%;
+    color:white;
+    clear: both;
+    overflow: auto;
+    line-height: 200%;
+    display:inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 110%;
+}
+/*.container {*/
+    /*!*height: 650px;*!*/
+    /*!*width: 98%;*!*/
+    /*!*margin: 1%;*!*/
+    /*!*border: 1px solid black;*!*/
+    /*!*overflow: hidden;*!*/
+    /*background-image: url("SW_images/SW_background_01.png");*/
+
+    /*position: fixed;*/
+    /*top: 5%;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*margin: auto;*/
+    /*overflow: hidden;*/
+/*}*/
+
+
+.block {
+    margin-top: 3%;
+    display: inline-block;
+    width: 20%;
+    height: 50%; /*150px*/
+    border: solid 1px transparent;
+    margin-left: 10%;
+    /*margin-top: 1.5%;*/
+    /*margin-bottom: 1.5%;*/
+    /*background-color: black;*/
+    color: white;
+
+    position: relative;
+}
+
+.block a {
+    text-decoration: none;
+}
+
+.block img{
+    /*height: 80%; !*150px*!*/
+    width: 100%;
+    display: block;
+    /*border: solid 0.01em rgba(255, 255, 255, 0.5);*/
+    /*border: 1px solid white;*/
+    overflow: hidden;
+    opacity: 0.8;
+    border-radius: 20%;
+}
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade*/
+.overlay {
+    position: absolute;
+    height: 9%; /*150px*/
+    width: 90%;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20%;
+    /*margin-bottom: 56%;*/
+
+}
+
+
+.block:hover .overlay {
+    opacity: 1;
+}
+
+
+

@@ -1,0 +1,223 @@
+body {
+    background-image: url("SW_images/SW_background_01.png");
+    font-family: Arial,Helvetica, sans-serif;
+}
+
+/*@font-face {*/
+    /*font-family: "Star Wars Font";*/
+    /*src: url(https://www.dafont.com/star-jedi/Starjedi.ttf) format("truetype");*/
+/*}*/
+/*p.swfont {*/
+    /*font-family: "Star Wars Font", Arial, Helvetica;*/
+/*}*/
+
+/* navigation bar layout */
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0d0d0d;
+}
+.navButtons {
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #333333;
+    color: #FFFF82
+}
+
+/* explore button layout */
+
+
+/*.exploreblock {*/
+    /*!*background: black;*!*/
+    /*!*height: 700px;*!*/
+    /*!*width: 98%;*!*/
+    /*!*margin: 1%;*!*/
+    /*!*border: 1px solid black;*!*/
+    /*!*color: white;*!*/
+    /*text-align: center;*/
+    /*background-image: url("SW_images/SW_background_01.png");*/
+
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*margin: auto;*/
+    /*overflow: auto;*/
+/*}*/
+
+#explorebtn {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 1em;
+    background-color: #ffb31a;
+    border-radius: 0.625em;
+
+}
+
+#explorebtn_p {
+    margin: 2%;
+    text-align: center;
+}
+
+
+/*Layout SW intro text*/
+
+#sw_scroll{
+    width: 60%;
+    height: 50%;
+}
+
+.intro {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    animation: intro 6s ease-out 1s;
+    color: #FFFF82;
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Set the animation & hide the logo */
+.logo {
+    position: absolute;
+    top: 16.5%;
+    left: 42%;
+
+    z-index: 1;
+    margin: auto;
+    animation: logo 9s ease-out 9s;
+    opacity: 0;
+}
+
+.logo svg {
+    width: inherit;
+}
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo {
+    0% {
+        width: 18em;
+        transform: scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;
+    }
+}
+
+p {
+    color: #FFFF82;
+}
+
+/* Set the font, lean the board, position it */
+#board {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    text-align: justify;
+    position: absolute;
+    margin-left: -9em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 350%;
+    height: 50em;
+    width: 18em;
+    bottom: 0;
+    left: 50%;
+}
+
+#board:after {
+    position: absolute;
+    content: ' ';
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+    animation: scroll 100s linear 16s;
+    position: absolute;
+    top: 100%;
+}
+
+#title, #subtitle {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}
+
+
+/*Mute sound Enable sound style*/
+.soundButtons {
+    margin: 0.5em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    outline: none;
+    padding: 1em;
+    background-color: black;
+    border: 1px solid white;
+    cursor:pointer;
+}
+
+.soundButtons:hover {
+    background-color: #333333;
+    color: #FFFF82
+}

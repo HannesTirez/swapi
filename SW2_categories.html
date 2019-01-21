@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exploring Star Wars</title>
+    <link rel="stylesheet" type="text/css" href="SW2_categories_layout.css">
+    <link rel="stylesheet" type="text/css" href="SW2_mobile.css" media="screen and (max-width:480px)">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="swapi.js"></script>
+</head>
+<body>
+    <header>
+        <ul id="nav">
+            <li class="nav"><a href="SW1_about.html">About</a></li>
+            <li class="nav"><a href="SW1_homepage.html">Start</a></li>
+        </ul>
+    </header>
+    <div id="category_text">
+        <h3>How does it work?</h3>Click on the pictures to explore the planets, characters, starships, movies, species and vehicles in the Star Wars Universe:
+    </div>
+
+<!--&lt;!&ndash; used answer 3: https://stackoverflow.com/questions/16421282/create-multiple-rows-of-divs?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa &ndash;&gt;-->
+    <div class="container">
+        <div class = "block" id="sw_planet">
+            <a href="SW3_planets.html"><img src="SW_images/sw_planet.jpg"></a>
+            <a href="SW3_planets.html"><div class="overlay">Planets</div></a>
+        </div>
+
+        <div class = "block" id="sw_people">
+            <a href="SW3_people.html"><img src="SW_images/sw_people.jpg"></a>
+            <a href="SW3_people.html"><div class="overlay">Characters</div></a>
+        </div>
+
+        <div class = "block" id="sw_starship">
+            <a href="SW3_starships.html"><img src="SW_images/sw_starship.jpg"></a>
+            <a href="SW3_starships.html"><div class="overlay">Starships</div></a>
+        </div>
+
+        <div class = "block" id="sw_movie">
+            <a href="SW3_films.html"><img src="SW_images/sw_movie.jpg"></a>
+            <a href="SW3_films.html"><div class="overlay">Movies</div></a>
+        </div>
+
+        <div class = "block" id="sw_species">
+            <a href="SW3_species.html"><img src="SW_images/sw_species.jpg"></a>
+            <a href="SW3_species.html"><div class="overlay">Species</div></a>
+        </div>
+
+        <div class = "block" id="sw_vehicle">
+            <a href="SW3_vehicles.html"><img src="SW_images/sw_vehicle.jpg"></a>
+            <a href="SW3_vehicles.html"><div class="overlay">Vehicles</div></a>
+        </div>
+
+
+    </div><!-- end container -->
+
+</body>
+</html>
+

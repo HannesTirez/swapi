@@ -1,0 +1,99 @@
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url("SW_images/SW_background_01.png");
+    box-sizing: border-box;
+}
+
+/*navigation bar layout*/
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0d0d0d;
+}
+
+.nav{
+    float: right;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #333333;
+    color: #FFFF82
+}
+
+
+
+/*CHARACTER SHEETS*/
+
+.container {
+    background: black;
+    width: 40%;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 2%;
+
+    clear: both;
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*margin: auto;*/
+    overflow: auto;
+    padding: 1em;
+    line-height: 200%;
+
+    display:inline-block;
+    border: 1px solid white;
+
+    text-align: left;
+}
+
+#image {
+    float: right;
+    /*margin-right: 5%;*/
+    /*margin-left: 5%;*/
+    padding: 1%;
+}
+
+img.resize {
+    max-width:100%;
+    max-height:100%;
+    border: 1px solid white;
+}
+
+#data_text {
+    float: left;
+    padding-left: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFF82;
+}
+
+a:hover {
+    color: #ffb31a;
+}
+
+
+/*List of entries*/
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#name {
+    font-weight: bold;
+}

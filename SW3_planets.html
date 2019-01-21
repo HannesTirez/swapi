@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planets in Star Wars</title>
+    <link rel="stylesheet" type="text/css" href="SW3_layout.css">
+    <link rel="stylesheet" type="text/css" href="SW2_mobile.css" media="screen and (max-width:480px)">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="swapi.js"></script>
+</head>
+<body>
+<header>
+    <ul id="nav">
+        <li class="nav"><a href="SW1_about.html">About</a></li>
+        <li class="nav"><a href="SW3_films.html">Movies</a></li>
+        <li class="nav"><a href="SW3_vehicles.html">Vehicles</a></li>
+        <li class="nav"><a href="SW3_starships.html">Starships</a></li>
+        <li class="nav"><a href="SW3_species.html">Species</a></li>
+        <li class="nav"><a href="SW3_people.html">Characters</a></li>
+        <li class="nav"><a href="SW3_planets.html">Planets</a></li>
+        <li class="nav"><a href="SW1_homepage.html">Start</a></li>
+    </ul>
+</header>
+
+<div id="category" hidden>planets</div> <!--Hidden category per pagina-->
+
+<!--SEARCH BAR + TABLES TO LOAD INPUT-->
+<div class="container">
+<h2>Planets</h2>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for planets.." title="Type in a name">
+<!--<table id="myTable_planets">-->
+    <!--<div id="exploreplanets0"></div>-->
+    <!--<div id="exploreplanets1"></div>-->
+    <!--<div id="exploreplanets2"></div>-->
+    <!--<div id="exploreplanets3"></div>-->
+    <!--<div id="exploreplanets4"></div>-->
+    <!--<div id="exploreplanets5"></div>-->
+    <!--<div id="exploreplanets6"></div>-->
+    <!--<div id="exploreplanets7"></div>-->
+    <!--<div id="exploreplanets8"></div>-->
+    <!--<div id="exploreplanets9"></div>-->
+<!--</table>-->
+    <table id="myTable_planets" class="table">
+        <tr>
+            <td id="exploreplanets0"></td>
+            <td id="exploreplanets1"></td>
+            <td id="exploreplanets2"></td>
+            <td id="exploreplanets3"></td>
+            <td id="exploreplanets4"></td>
+            <td id="exploreplanets5"></td>
+            <td id="exploreplanets6"></td>
+            <td id="exploreplanets7"></td>
+            <td id="exploreplanets8"></td>
+            <td id="exploreplanets9"></td>
+    </table>
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        for (t = 0; t < 10; t ++) {
+            table = document.getElementById("exploreplanets" + t);
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    }
+</script>
+</div>
+
+</body>
+</html>
